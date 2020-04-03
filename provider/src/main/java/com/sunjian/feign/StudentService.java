@@ -1,4 +1,4 @@
-package com.sunjian.service;
+package com.sunjian.feign;
 
 import com.sunjian.entity.Student;
 

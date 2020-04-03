@@ -1,7 +1,7 @@
-package com.sunjian.service.impl;
+package com.sunjian.feign.impl;
 
 import com.sunjian.entity.Student;
-import com.sunjian.service.StudentService;
+import com.sunjian.feign.StudentService;
 import org.springframework.stereotype.Service;
 
 import java.util.Collection;

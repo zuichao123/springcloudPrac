@@ -1,8 +1,9 @@
 package com.sunjian.controller;
 
 import com.sunjian.entity.Student;
-import com.sunjian.service.StudentService;
+import com.sunjian.feign.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Collection;
@@ -16,6 +17,9 @@ import java.util.Collection;
 public class StudentController {
     @Autowired
     private StudentService studentService;
+
+    @Value("${server.port}")
+    private String port;
 
     @GetMapping("/findAll")
     public Collection<Student> findAll(){
@@ -40,5 +44,10 @@ public class StudentController {
     @PostMapping("/update")
     public void update(@RequestBody Student student){
         studentService.saveOrUpdate(student);
+    }
+
+    @GetMapping("/index")
+    public String index(){
+        return "provider " + this.port;
     }
 }

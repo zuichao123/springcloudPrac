@@ -2,14 +2,16 @@ package com.sunjian;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 
 /**
  * @author sunjian
- * @date 2020/4/3 8:23
+ * @date 2020/4/3 21:53
  */
 @SpringBootApplication
-public class Application {
+@EnableZuulProxy
+public class GatewayApplication {
     public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
+        SpringApplication.run(GatewayApplication.class, args);
     }
 }
