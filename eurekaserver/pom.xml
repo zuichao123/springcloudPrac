@@ -11,6 +11,8 @@
 
     <artifactId>eurekaserver</artifactId>
 
+    <!--注册中心-->
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>

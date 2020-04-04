@@ -15,6 +15,13 @@
         <module>gateway</module>
         <module>ribbon</module>
         <module>feign</module>
+        <module>hystrix</module>
+        <module>nativeconfigserver</module>
+        <module>nativeconfigclient</module>
+        <module>configserver</module>
+        <module>configclient</module>
+        <module>zipkin</module>
+        <module>zipkinclient</module>
     </modules>
 
     <parent>

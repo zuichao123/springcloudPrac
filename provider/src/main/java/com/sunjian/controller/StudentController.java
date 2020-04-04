@@ -1,7 +1,7 @@
 package com.sunjian.controller;
 
 import com.sunjian.entity.Student;
-import com.sunjian.feign.StudentService;
+import com.sunjian.feignService.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;

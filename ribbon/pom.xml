@@ -11,6 +11,8 @@
 
     <artifactId>ribbon</artifactId>
 
+    <!--ribbon负载均衡-->
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>

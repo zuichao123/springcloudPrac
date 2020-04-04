@@ -11,6 +11,8 @@
 
     <artifactId>provider</artifactId>
 
+    <!--生产者服务-->
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>

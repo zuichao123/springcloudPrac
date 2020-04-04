@@ -1,0 +1,4 @@
+# 远程配置-文件
+server:
+  port: 8070
+foo: foo version 7

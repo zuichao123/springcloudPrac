@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: configclient
+  profiles:
+    active: dev # name + active = 配置文件的名字
+  cloud:
+    config:
+      uri: http://localhost:8762 # 指定读取的配置文件的URL
+      fail-fast: true # 设置客户端优先判断 configserver 是否正常，并且快速响应失败内容

@@ -11,6 +11,8 @@
 
     <artifactId>gateway</artifactId>
 
+    <!--网关-->
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>

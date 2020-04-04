@@ -1,0 +1,18 @@
+server:
+  port: 9999
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://www.github.com/zuichao2/springcloudPrac.git
+          search-paths: config # 在 config 文件夹中找配置文件进行读取
+          username: zuichao2
+          passphrase: zuichao_2
+      label: master
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
